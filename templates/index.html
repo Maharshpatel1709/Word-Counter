@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Word Counter</title>
+</head>
+
+<style>
+    body{
+          background-image: url("https://raw.githubusercontent.com/Maharshpatel1709/Word-Counter/main/bulbs.jpg");
+          background-color: #161616;
+          height: 500px;
+          background-position: top-left;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+</style>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="https://raw.githubusercontent.com/Maharshpatel1709/Word-Counter/main/logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+        <b style="font-family:verdana">WordCounter</b>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/"><font style="font-family:verdana">Home</font></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about"><font style="font-family:verdana">About</font></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact"><font style="font-family:verdana">Contact</font></a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <form action="/count" method="get">
+        <div class="mb-3">
+          <textarea name="text" class="form-control" id="exampleFormControlTextarea1" placeholder="Type or Paste your text here..." rows="18"></textarea>
+        </div>
+        <button class="btn" type="submit">SUBMIT</button>
+    </form>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+<style>
+
+.navbar {
+padding: 1em calc(50% - 610px);
+background-color: #161616;
+}
+
+.nav-item {
+    margin-left: 3em;
+}
+
+.mb-3 {
+    max-width: 45.5em;
+
+    width: 100%;
+    margin: 1em 5em;
+
+    position: relative;
+    padding: 1.5em;
+    background-color: #FFFFFF;
+    border: 2px solid #F2BC05;
+    box-shadow: 0 0 10px #F2BC05;
+    border-radius: 0.25em;
+    animation: slideUp 750ms;
+}
+
+.btn {
+    background-color: transparent;
+    border: 4px solid #F2BC05;
+    border-radius: 40px;
+    color: white;
+    padding: 10px 200px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Verdana";
+    margin: 30px 100px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.btn:hover {
+  background-color: #F2BC05;
+  color: black;
+}
+</style>
+
